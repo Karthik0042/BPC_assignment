@@ -9,7 +9,8 @@ import math
 #np.random.seed(random_seed)
 #random.seed(random_seed)
 
-lattice_size = 25 # The question mentions the lattice size to be 10 times the polymer size
+lattice_size = 30
+
 temperature = 1.0 # taking KbT =1
 
 
@@ -44,7 +45,7 @@ def calculate_interaction_energy(polymers): # Function to calculate the interact
                     other_bead = other_polymer[bead_index]  # we are accessing the bead of the other polymer at the same index for comaparing with orginal bead
                     distance = abs(x - other_bead[0]) + abs(y - other_bead[1]) # calculating the distance between the beads of same type
                     if distance == 1:  # condition for adjuscent beads
-                        interaction_energy -= 10 # Increment energy for adjacent beads
+                        interaction_energy -=  10# Increment energy for adjacent beads
         total_interaction_energy += interaction_energy # adding the interaction energy to the total interaction energy
     return total_interaction_energy
 

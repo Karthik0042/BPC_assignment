@@ -9,7 +9,9 @@ import math
 #np.random.seed(random_seed)
 #random.seed(random_seed)
 
-lattice_size = 25 # The question mentions the lattice size to be 10 times the polymer size
+
+lattice_size = 30
+
 temperature = 1.0 # taking KbT =1
 
 
